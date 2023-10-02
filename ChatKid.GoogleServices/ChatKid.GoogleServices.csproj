@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Google.Apis.Auth.AspNetCore3" Version="1.62.0" />
+		<PackageReference Include="Google.Apis.Core" Version="1.62.0" />
+		<PackageReference Include="Google.Apis.Gmail.v1" Version="1.62.0.3182" />
+		<PackageReference Include="Google.Apis.Oauth2.v2" Version="1.62.0.1869" />
+		<PackageReference Include="Google.Cloud.Storage.V1" Version="4.6.0" />
+		<PackageReference Include="MimeKit" Version="4.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ChatKid.Common\ChatKid.Common.csproj" />
+		<ProjectReference Include="..\ChatKid.DataLayer\ChatKid.DataLayer.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>46fae107-34dc-46d6-9466-71ca95b6c68c</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.62.0" />
+    <PackageReference Include="Google.Apis.Core" Version="1.62.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.21" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.32.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChatKid.ApiFramework\ChatKid.ApiFramework.csproj" />
+    <ProjectReference Include="..\ChatKid.Application\ChatKid.Application.csproj" />
+    <ProjectReference Include="..\ChatKid.Common\ChatKid.Common.csproj" />
+    <ProjectReference Include="..\ChatKid.DataLayer\ChatKid.DataLayer.csproj" />
+    <ProjectReference Include="..\ChatKid.GoogleServices\ChatKid.GoogleServices.csproj" />
+    <ProjectReference Include="..\ChatKid.Notification\ChatKid.Notification.csproj" />
+    <ProjectReference Include="..\ChatKid.OpenAI\ChatKid.OpenAI.csproj" />
+  </ItemGroup>
+
+</Project>
